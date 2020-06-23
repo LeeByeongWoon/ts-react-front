@@ -39,14 +39,14 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## 초기 세팅
 
-### 폴더 구조
+### `폴더 구조`
 ![foldering](https://user-images.githubusercontent.com/56239849/85366493-6a1e1400-b562-11ea-8933-d1355da05a69.png)
 - **components**: 컴포넌트 파일들이 위치하는 폴더 //페이지 그리는 부분
 - **containers**: 컨테이너 파일들이 위치하는 폴더, 주로 state를 props로 매핑하는 코드들이 위치
 - **pages**: Routing을 위한 페이지 파일들이 위치하는 폴더 
 - **store**: redux 작업을 위한 폴더, 내부에 **actions, reducers** 폴더 존재 // 사용x
 
-### pages
+### `pages`
 ![pages](https://user-images.githubusercontent.com/56239849/85366510-72764f00-b562-11ea-9eb4-2ce377851aca.png)
 내보낼 페이지를 index.ts에 정리한뒤 app에서 렌더링하는 구조
 루트경로("/")기준으로 불러와짐
