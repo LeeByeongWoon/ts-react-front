@@ -1,16 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## 사용 가능한 스크립트들..
 
-In the project directory, you can run:
+프로젝트 디렉토리에서 사용가능한 스크립트들:
 
 ### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+개발환경에서 코드를 컴파일 가능합니다.<br />
+ [http://localhost:3000](http://localhost:3000)기본브라우저로 해당 포트에 서버가 실행됩니다..
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+페이지가 수정되면 새로고침되며 내용이 수정됩니다.<br />
+또한 문법 오류도 콘솔창에서 확인 가능합니다.
 
 ### `yarn test`
 
@@ -37,8 +37,14 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## 폴더 구조
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![foldering](https://user-images.githubusercontent.com/56239849/85366493-6a1e1400-b562-11ea-8933-d1355da05a69.png)
+- **components**: 컴포넌트 파일들이 위치하는 폴더 //페이지 그리는 부분
+- **containers**: 컨테이너 파일들이 위치하는 폴더, 주로 state를 props로 매핑하는 코드들이 위치
+- **pages**: Routing을 위한 페이지 파일들이 위치하는 폴더 
+- **store**: redux 작업을 위한 폴더, 내부에 **actions, reducers** 폴더 존재 // 사용x
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![pages](https://user-images.githubusercontent.com/56239849/85366510-72764f00-b562-11ea-9eb4-2ce377851aca.png)
+내보낼 페이지를 index.ts에 정리한뒤 app에서 렌더링하는 구조
+루트경로("/")기준으로 불러와짐
