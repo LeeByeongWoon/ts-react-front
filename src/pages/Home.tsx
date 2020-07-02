@@ -1,7 +1,12 @@
 import React from "react";
+import { Clock, Momentem } from "components/main";
 
 function Home() {
-  return <div>home aa</div>;
+  return (
+    <Momentem>
+      <Clock />
+    </Momentem>
+  );
 }
 
 export default Home;

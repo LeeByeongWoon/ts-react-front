@@ -1,12 +1,12 @@
 import React from 'react';
 import AuthContent from './AuthContent';
 
-function Login() {
+function Register() {
     return (
-        <AuthContent title='로그인'>
+        <AuthContent title="회원가입">
 
         </AuthContent>
     )
 }
 
-export default Login;
+export default Register;

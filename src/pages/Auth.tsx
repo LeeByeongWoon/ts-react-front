@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { Route } from "react-router-dom";
-import { Login } from "components/Auth";
+import { AuthWrapper, Login, Register } from "components/Auth";
 import { useUsersSetVisible } from "status/visibleContext";
+import { Route, Redirect, Switch } from "react-router-dom";
 
 function Auth() {
   const change = useUsersSetVisible();
@@ -13,8 +13,13 @@ function Auth() {
       change(true);
     };
   }, [change])
-  // Sub-Route
-  return <Route path="/auth/login" component={Login} />;
+  return <AuthWrapper>
+    <Switch>
+      <Redirect path='/auth' exact to='/auth/login' />
+      <Route path="/auth/login" component={Login} />
+      <Route path="/auth/register" component={Register} />
+    </Switch>
+  </AuthWrapper>;
 }
 
 export default Auth;

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Header } from 'components/Base';
-import { LoginButton } from 'components/Base/Header';
+import { LoginButton, Header } from 'components/Base/Header';
 import { useUsersVisible } from 'status/visibleContext';
 
 function HeaderContainer() {
