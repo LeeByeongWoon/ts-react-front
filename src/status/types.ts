@@ -13,3 +13,11 @@ export type InputType = {
   label: string;
   [x: string]: any;
 };
+export type selects = {
+  gray: string,
+  pink: string,
+  violet: string,
+  indigo: string,
+  Teal: string,
+  [key: string]: string
+}

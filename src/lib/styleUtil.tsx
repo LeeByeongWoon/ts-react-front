@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
-// import { SizeType } from 'status/types';
+import oc from 'open-color';
 
-// // 미디어 쿼리 헬퍼: https://www.styled-components.com/docs/advanced#media-templates 참조
+// 미디어 쿼리 헬퍼: https://www.styled-components.com/docs/advanced#media-templates 참조
 
 // export const sizes: SizeType = {
 //     wide: '1200px',
@@ -31,3 +31,8 @@ export const shadow = (weight: number) => {
 
     return shadows[weight];
 };
+export const theme = (weight: number) => {
+    // gray, teal, violet, pink,cyan
+    return oc.cyan[weight];
+}
+export const gradient = `linear-gradient(to right, ${oc.cyan[6]}, ${oc.violet[5]});`;

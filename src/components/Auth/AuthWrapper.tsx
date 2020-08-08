@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { shadow } from 'lib/styleUtil';
-import oc from 'open-color';
+import { shadow, theme } from 'lib/styleUtil';
 import { Link } from 'react-router-dom';
 
 const Positioner = styled.div`
@@ -16,7 +15,7 @@ const ShadowedBox = styled.div`
 `;
 
 const LogoWrapper = styled.div`
-    background: ${oc.teal[7]};
+    background: ${theme(7)};
     height: 5rem;
     display: flex;
     align-items: center;

@@ -1,14 +1,13 @@
 import React from "react";
-import oc from "open-color";
 import styled from "styled-components";
-import { shadow } from "lib/styleUtil";
+import { shadow, theme } from "lib/styleUtil";
 
 const Wrapper = styled.div`
   margin-top: 1rem;
   padding-top: 0.6rem;
   padding-bottom: 0.5rem;
 
-  background: ${oc.teal[6]};
+  background: ${theme(6)};
   color: white;
 
   text-align: center;
@@ -20,11 +19,11 @@ const Wrapper = styled.div`
   transition: 0.2s all;
 
   &:hover {
-    background: ${oc.teal[5]};
+    background: ${theme(5)};
     ${shadow(0)}
   }
   &:active {
-    background: ${oc.teal[7]};
+    background: ${theme(7)};
   }
 `;
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { HeaderProps } from "status/types";
 import styled from "styled-components";
-import oc from 'open-color'
+import { theme, gradient } from "lib/styleUtil";
 
 const Positioner = styled.div`
   display: flex;
@@ -29,7 +29,7 @@ const HeaderContents = styled.div`
 const Logo = styled.div`
   font-size: 1.4rem;
   letter-spacing: 2px;
-  color: ${oc.teal[7]};
+  color: ${theme(7)};
   font-family: 'Rajdhani';
 `
 const Spacer = styled.div`
@@ -38,7 +38,7 @@ const Spacer = styled.div`
 //하단 그라데이션 
 const GradientBorder = styled.div`
     height: 3px;
-    background: linear-gradient(to right, ${oc.teal[6]}, ${oc.cyan[5]}); 
+    background:${gradient}
 `;
 
 function Header({ children }: HeaderProps) {

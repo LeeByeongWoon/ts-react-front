@@ -3,17 +3,15 @@ import { Route, Redirect, Switch } from "react-router-dom";
 import { Home, Auth, NotFound } from "./pages";
 import HeaderContainer from "container/Base/HeaderContainer";
 import { UsersProvider } from "status/visibleContext";
-import styled from "styled-components";
 
-const HeaderSpace = styled.div`
-width: 1200px;
-height: 58px;
-`
+// const HeaderSpace = styled.div`
+// width: 1200px;
+// height: 58px;
+// `
 function App() {
   return (
     <UsersProvider>
       <HeaderContainer />
-      <HeaderSpace />
       <Switch>
         <Route exact path="/" component={Home} />
         <Redirect path="/home" to="/" />
